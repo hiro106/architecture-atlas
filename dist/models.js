@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from './vendor/three.module.js';
 import { OrbitControls } from './vendor/OrbitControls.js';
 const palette={ivory:0xd9d9cc,concrete:0xa9b1ae,stone:0xc4b594,glass:0x3b6874,bronze:0xa76b47,roof:0x9c6047,wood:0x9f7654,water:0x497c86,dark:0x465157};
 let root;
