@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>建築の系譜 | Architecture Atlas</title>
+  <meta name="description" content="12人の建築家の思想と功績を、肖像と動かせる3D建築模型でたどる建築史アトラス。">
+  <meta name="theme-color" content="#141a1d">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23141a1d'/%3E%3Cpath d='M12 48V27l20-13 20 13v21M22 48V31h20v17M8 50h48' fill='none' stroke='%23ed9c66' stroke-width='4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <header class="topbar"><a href="#corbusier" class="brand"><span class="brand-mark">A<span>╱</span></span><span>建築の系譜<small>ARCHITECTURE ATLAS</small></span></a><p class="edition">形の向こうに、思想がある。<span>12 ARCHITECTS / 6 CENTURIES</span></p><button class="about-button" id="about-open">このアトラスについて <span>↗</span></button></header>
+  <div class="app-shell">
+    <aside class="catalog" aria-label="建築家を選択"><div class="catalog-heading"><span class="eyebrow">THE ARCHITECTS</span><span id="count">12</span></div><p class="catalog-intro">時代を選び、建築をたどる</p><nav id="architect-list"></nav><div class="catalog-foot"><span class="small-cross">＋</span>ひとつの建築から、<br>世界の見え方が変わる。</div></aside>
+    <main id="main" tabindex="-1">
+      <div class="exhibit-head"><div><div class="eyebrow" id="era-label"></div><h1 id="architect-name"></h1><p id="architect-english"></p></div><div class="exhibit-number" id="exhibit-number"></div></div>
+      <div class="exhibit-grid">
+        <section class="model-section" aria-label="建築の3D模型">
+          <div class="viewer-top"><span class="viewer-label">INTERACTIVE MODEL</span><span class="model-badge">学習用の概念模型</span></div>
+          <div id="model-viewer" tabindex="0" role="region" aria-label="3D模型。ドラッグで回転、スクロールで拡大縮小。矢印キーでも回転できます。"><div id="model-loading">建築模型を準備しています…</div><div class="orientation" aria-hidden="true"><span>Y</span><i></i><b>X</b></div></div>
+          <div class="viewer-tools"><div class="view-presets" role="group" aria-label="模型の視点"><button data-view="perspective" aria-pressed="true">立体</button><button data-view="front" aria-pressed="false">正面</button><button data-view="top" aria-pressed="false">真上</button></div><div class="model-options"><button id="rotate" aria-pressed="false" title="自動回転">↻ <span>自動回転</span></button><button id="wireframe" aria-pressed="false" title="線で構造を見る">◇ <span>ワイヤー</span></button><button id="reset" title="視点をリセット">⟲ <span>リセット</span></button></div></div>
+          <div class="model-caption"><div><span class="eyebrow" id="work-date"></span><h2 id="work-name"></h2><p id="work-place"></p></div><span class="caption-index" aria-hidden="true">01<br><span>MODEL</span></span></div>
+          <p class="interaction-hint">ドラッグで回転 <span>／</span> スクロール・ピンチで拡大 <span>／</span> 矢印キーで回転</p>
+          <div id="model-highlights" class="model-highlights" aria-label="建築の見どころ"></div>
+          <p id="model-note" class="model-note"></p>
+        </section>
+        <section class="story-section" aria-label="建築家の解説"><div id="profile" class="profile"></div><div class="story-tabs" role="tablist" aria-label="解説の種類"><button role="tab" id="tab-ideas" data-tab="ideas" aria-selected="true" aria-controls="story-content">功績と思想</button><button role="tab" id="tab-building" data-tab="building" aria-selected="false" aria-controls="story-content" tabindex="-1">建築を読む</button><button role="tab" id="tab-sources" data-tab="sources" aria-selected="false" aria-controls="story-content" tabindex="-1">資料</button></div><div id="story-content" role="tabpanel" tabindex="0" aria-labelledby="tab-ideas"></div></section>
+      </div>
+      <div class="journey"><div><span class="eyebrow">CONTINUE EXPLORING</span><p>建築は、前の時代への返答でもある。</p></div><div class="journey-buttons"><button id="previous" aria-label="前の建築家">←</button><button id="next">次の建築家 <span>→</span></button></div></div>
+    </main>
+  </div>
+  <dialog id="about-dialog"><div class="dialog-top"><span class="eyebrow">ABOUT THE ATLAS</span><button id="about-close" aria-label="閉じる">×</button></div><h2>建築を、ゆっくり読み解く。</h2><p>ルネサンスから現代まで、12人の建築家と代表作を通して、空間・構造・社会の関係を考える小さな建築史アトラスです。西欧、日本、オスマン帝国を中心とした選集であり、世界の建築史全体を網羅するものではありません。</p><p>すべての3Dモデルは、このアトラスのために作成した学習用の概念模型です。形状・部材・敷地を簡略化しており、実測モデルや設計図の代わりにはなりません。視点を切り替えて、各建築の特徴を確かめてください。</p><p>解説は施設・財団・公的機関などの公開資料をもとに編集しています。建築は建築家ひとりの仕事ではなく、協働者、構造技術者、職人、依頼主によって実現します。各ページの「資料」で出典と肖像のクレジットを確認できます。</p><div class="about-bottom">編集・確認：2026年9月 <span>Three.js · MIT License</span></div></dialog>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{
+  "wright": {
+    "note": "1954年。米国議会図書館 New York World-Telegram and Sun collection。寄贈条件によりパブリックドメインとされる。",
+    "objectPosition": "50% 35%",
+    "license": "Public domain",
+    "creator": "Al Ravenna / New York World-Telegram and the Sun",
+    "path": "./portraits/wright.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frank_Lloyd_Wright_portrait.jpg"
+  },
+  "palladio": {
+    "note": "アレッサンドロ・マガンツァ作とされる歴史的肖像画。",
+    "objectPosition": "50% 25%",
+    "license": "Public domain",
+    "creator": "Alessandro Maganza",
+    "path": "./portraits/palladio.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrea_Palladio2.jpeg"
+  },
+  "sinan": {
+    "note": "1579年頃の写本細密画。シナンを描いたものと考えられる人物像。",
+    "objectPosition": "50% 45%",
+    "license": "Public domain",
+    "creator": "Nakkaş Osman",
+    "path": "./portraits/sinan.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lokman_1579_detail_showing_Sinan_(cropped).jpg"
+  },
+  "corbusier": {
+    "note": "1964年、Joop van Bilsen / Anefo。オランダ国立公文書館がCC0で公開。",
+    "objectPosition": "50% 35%",
+    "license": "CC0",
+    "creator": "Joop van Bilsen for Anefo",
+    "path": "./portraits/corbusier.jpg",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Corbusier_(1964).jpg"
+  },
+  "mies": {
+    "note": "Arts & Architecture 1960年6月号掲載。Commonsでは米国の著作権更新なしによるパブリックドメイン。",
+    "objectPosition": "50% 30%",
+    "license": "Public domain",
+    "creator": "Unknown author",
+    "path": "./portraits/mies.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ludwig_Mies_van_der_Rohe_in_Arts_%26_Architecture,_June_1960_issue.jpg"
+  },
+  "gropius": {
+    "note": "1919年、ルイス・ヘルト撮影。",
+    "objectPosition": "50% 30%",
+    "license": "Public domain",
+    "creator": "Louis Held",
+    "path": "./portraits/gropius.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WalterGropius-1919.jpg"
+  },
+  "tange": {
+    "note": "1953年頃、東京・成城の自邸建設現場。撮影者不明。CommonsではPD-Japan-oldphoto。",
+    "objectPosition": "50% 18%",
+    "license": "Public domain",
+    "creator": "Unknown photographer",
+    "path": "./portraits/tange.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%B9%E4%B8%8B%E5%81%A5%E4%B8%89%E3%83%9D%E3%83%BC%E3%83%88%E3%83%AC%E3%83%BC%E3%83%88_ca.1953_(cropped).jpg"
+  },
+  "ando": {
+    "note": "2004年、ドイツのランゲン財団美術館開館時。",
+    "objectPosition": "50% 30%",
+    "license": "CC BY-SA 2.0",
+    "creator": "Christopher Schriner from Köln, Deutschland",
+    "path": "./portraits/ando.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadao_Ando_2004_(4x5_cropped).jpg"
+  },
+  "kahn": {
+    "note": "1969年、アゾロにあるカルロ・スカルパ邸での写真からの切り抜き。",
+    "objectPosition": "50% 30%",
+    "license": "CC BY-SA 4.0",
+    "creator": "Francalb89",
+    "path": "./portraits/kahn.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LouisKahn.jpg"
+  },
+  "gaudi": {
+    "note": "1878年の肖像写真。",
+    "objectPosition": "50% 30%",
+    "license": "Public domain",
+    "creator": "Pau Audouard Deglaire",
+    "path": "./portraits/gaudi.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antoni_Gaudi_1878.jpg"
+  },
+  "brunelleschi": {
+    "note": "マザッチョによるブランカッチ礼拝堂フレスコ画の肖像部分。歴史的肖像。",
+    "objectPosition": "50% 35%",
+    "license": "Public domain",
+    "creator": "Masaccio; scan uploaded by Sailko; crop by MenkinAlRire",
+    "path": "./portraits/brunelleschi.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masaccio,_cappella_brancacci,_san_pietro_in_cattedra._ritratto_di_filippo_brunelleschi-184.jpg"
+  },
+  "hadid": {
+    "note": "2011年、コロンビア大学GSAPPでの講演。",
+    "objectPosition": "50% 25%",
+    "license": "CC BY 2.0",
+    "creator": "Columbia GSAPP",
+    "path": "./portraits/hadid.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zaha_Hadid_-_Presentation_%27What_is_new%3F%27_(cropped).jpg"
+  }
+}
