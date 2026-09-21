@@ -2,6 +2,10 @@
 
 12人の建築家を、歴史的肖像、出典付きの日本語解説、Three.jsによる操作可能な概念模型で紹介する静的Webアプリ。
 
+公開版：https://architecture-atlas-tanaka.h-tanaka840330.chatgpt.site
+
+ソースコードはGitHubで公開しています。肖像の出典・ライセンスと、模型の省略範囲は各建築家の「資料」タブで確認できます。
+
 ## 起動
 
 Node.jsで `node server.cjs` を実行し、表示されるローカルURLを開く。追加のnpmインストールは不要。`dist` が配信用ファイル一式。
