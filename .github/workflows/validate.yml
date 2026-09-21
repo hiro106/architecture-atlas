@@ -1,0 +1,30 @@
+name: Validate static site
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: |
+          node --check dist/app.js
+          node --check dist/data.js
+          node --check dist/models.js
+      - name: Check portrait records and files
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; import { architects } from './dist/data.js'; const portraits = JSON.parse(fs.readFileSync('./dist/portraits.json')); if (architects.length !== 12) throw new Error('Expected 12 architects'); for (const architect of architects) { const portrait = portraits[architect.id]; if (!portrait || !portrait.creator || !portrait.license || !portrait.sourceUrl) throw new Error('Incomplete portrait record: ' + architect.id); if (!fs.existsSync('./dist/portraits/' + architect.id + '.jpg')) throw new Error('Missing portrait: ' + architect.id); }"
+      - name: Reject credential-like strings
+        run: |
+          credential_pattern='(gh'"'"'p_|github'"'"'_pat_|s'"'"'k-[A-Za-z0-9_-]{20,}|BEGIN [A-Z ]*PRIVATE KEY|Authoriz'"'"'ation:[[:space:]]*Bearer)'
+          if rg --hidden --glob '!dist/vendor/**' --glob '!*.md' --glob '!LICENSE' "$credential_pattern" .; then
+            echo 'Credential-like content found.' >&2
+            exit 1
+          fi

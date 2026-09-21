@@ -26,9 +26,13 @@ Node.jsで `node server.cjs` を実行し、表示されるローカルURLを開
 
 ## 権利・出典
 
-肖像の出典・作者・ライセンスは `dist/portraits.json` と各ページの「資料」に記載。JPEGは提供元のサムネイルを保存。画面上でグレースケール・トリミング表示を行う。CC BY-SAの写真を改変したものとして扱う場合、その写真の改変版は同じライセンスに従う。
+肖像の出典・作者・ライセンスは [ATTRIBUTIONS.md](ATTRIBUTIONS.md)、`dist/portraits.json`、各ページの「資料」に記載。JPEGは提供元のサムネイルを保存し、画面上でグレースケール・トリミング表示を行う。CC BY-SAの写真を改変したものとして扱う場合、その写真の改変版は同じライセンスに従う。
 
-Three.js r180（MIT）のファイルとライセンスは `dist/vendor`。書体はGoogle Fontsから取得し、読み込めない環境ではシステムフォントを使用。研究内容の確認日は2026年9月21日。
+このプロジェクトで独自に作成したコードと文章は [MIT License](LICENSE)。Three.js r180（MIT）のファイルとライセンスは `dist/vendor`。Noto Sans JP / Noto Serif JPはローカルに同梱し、SIL Open Font License 1.1のもとで配布。詳細は [ATTRIBUTIONS.md](ATTRIBUTIONS.md)。研究内容の確認日は2026年9月21日。
+
+## 継続的な確認
+
+GitHub ActionsはJavaScriptの構文、データと画像の対応、既知の認証情報らしき文字列を検査する。GitHubのSecret Scanning、Push Protection、Dependabot security updatesも有効化済み。
 
 ## 配信
 
